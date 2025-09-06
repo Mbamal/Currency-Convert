@@ -11,33 +11,34 @@
     <h1>Currency Converter</h1>
     <div class="currency-container">
         <select id="currency-first">
-            <option value="AUD">AUD</option>
-            <option value="FRANC CFA">FRANC CFA</option>
+            <option value="AUD" selected>AUD</option>
+            <option value="CAD">CAD</option>
             <option value="EUR">EUR</option>
-            <option value="INR">INR</option>
-            <option value="BR">BR</option>
+            <option value="INR" selected>INR</option>
+            <option value="BEF">BEF</option>
             <option value="JPY">JPY</option>
-            <option value="USD" selected>USD</option>
+            <option value="USD">USD</option>
         </select>
 
         <input type="number" id="worth-first" value="1" min="0">
 
     </div>
-<div class="currency-container">
+    <div class="currency-container">
         <select id="currency-second">
             <option value="AUD">AUD</option>
-            <option value="FRANC CFA">FRANC CFA</option>
+            <option value="CAD">CAD</option>
             <option value="EUR">EUR</option>
-            <option value="INR" selected>INR</option>
-            <option value="BR">BR</option>
+            <option value="INR">INR</option>
+            <option value="BEF">BEF</option>
             <option value="JPY">JPY</option>
-            <option value="USD">USD</option>
+            <option value="USD" selected>USD</option>
         </select>
 
         <input type="number" id="worth-second" disabled>
 
+        <button id="convert">Convert</button>
     </div>
-<p class="exchange-rate" id="exchange-rate"> 1 USD = 138.5802 JPY</p>
+        <p class="exchange-rate" id="exchange-result-para"></p>
     </div>
     <script src="index.js"></script>
 </body>
